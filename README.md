@@ -23,7 +23,7 @@ composer require cboden/ratchet
 # Lancer le projet
 
 ~~~
-php -S localhost:5001
+php bin/index.php
 ~~~
 
 # Ressources
