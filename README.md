@@ -4,7 +4,9 @@ Un exemple d'application PHP en temps réel grâce au protocole [Websocket](http
 
 >Le projet utilise le paquet [ratchet](https://packagist.org/packages/cboden/ratchet)
 
-# Principe
+## Principe
+
+Le protocole WebScoket, basé sur le protocole HTTP, permet d'ouvrir une connexion permanente entre un client et un serveur où le serveur peut pousser vers le client et le client vers le serveur (fonctionne dans les deux sens). Pour l'initialiser, le client va demander à ouvrir une connexion WebScoket au serveur, celui-ci notifie le client qu'il autorise la demande, le client ouvre la connexion, le serveur enregistre le client.
 
 Côté serveur WebScoket, on lance un script qui va écouter des évènements. En général le script est lancé par un gestionnaire de tâches de l'OS (CRON). On lui fera implémenter l'interface `MessageComponentInterface`. Le script va écouter 4 évènements via 4 fonctions (méthodes):
 - `onOpen` : appelée quand un nouveau client se connecte
@@ -14,7 +16,7 @@ Côté serveur WebScoket, on lance un script qui va écouter des évènements. E
 
 L'interface `ConnectionInterface` est implémentée par une `Connection`, et représente un client HTTP connecté (en général un navigateur).
 
-# Installation via composer
+## Installation (via composer)
 
 Installer les dépendances du projet
 
@@ -22,7 +24,7 @@ Installer les dépendances du projet
 composer install
 ~~~
 
-# Lancer le projet
+## Lancer le projet
 
 Lancer le *serveur WebSocket*
 
@@ -38,7 +40,10 @@ php -S localhost:5001 -t server-app
 
 >Utiliser n'importe quel port libre. En local, pour résoudre les 2 domaines on utilise deux ports différents.
 
-# Ressources
+
+
+
+## Ressources
 
 Joli résumé du principe de fonctionnement de PHP [sur le site de Ratchet](http://socketo.me/docs/flow), embrassant complètement le protocole HTTP
 
