@@ -1,6 +1,6 @@
 # poc-webscoket
 
-Un exemple d'application PHP en temps réel grâce au protocole Websocket. Le projet se compose d'une application web et d'une application "serveur WebScoket".
+Un exemple d'application PHP en temps réel grâce au protocole [Websocket](https://fr.wikipedia.org/wiki/WebSocket). Le projet se compose d'une application web et d'une application "serveur WebScoket".
 
 >Le projet utilise le paquet [ratchet](https://packagist.org/packages/cboden/ratchet)
 
