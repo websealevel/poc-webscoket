@@ -40,7 +40,9 @@ php -S localhost:5001 -t server-app
 
 # Ressources
 
->If you've been working with PHP for any length of time you're probably used to writing short lived scripts. Each web page loaded on the client's side will, on the server side, launch a new PHP script, loads resources (such as a database connection), execute your code, close the resources and send the output (HTML) back to the client, and close the connection. This is the tried and true nature of the HTTP protocol over the past several decades. (J'aime bien cette formulation, joli résumé du fonctionnement de PHP complètement soudé au protocole HTTP)
+Joli résumé du principe de fonctionnement de PHP [sur le site de Ratchet](http://socketo.me/docs/flow), embrassant complètement le protocole HTTP
+
+>If you've been working with PHP for any length of time you're probably used to writing short lived scripts. Each web page loaded on the client's side will, on the server side, launch a new PHP script, loads resources (such as a database connection), execute your code, close the resources and send the output (HTML) back to the client, and close the connection. This is the tried and true nature of the HTTP protocol over the past several decades.
 
 - [How to Create a WebSocket Server in PHP with Ratchet for Real-Time Applications](https://www.twilio.com/blog/create-php-websocket-server-build-real-time-even-driven-application)
 - [Ratchet, WebSockets for PHP](http://socketo.me/)
