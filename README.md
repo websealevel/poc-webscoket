@@ -24,7 +24,7 @@ Installer les dépendances du projet
 composer install
 ~~~
 
-## Lancer le projet
+## Lancer le projet (serveur *built-in* de PHP)
 
 Lancer le *serveur WebSocket*
 
@@ -38,7 +38,7 @@ Lancer le serveur d'application
 php -S localhost:5001 -t server-app
 ~~~
 
->Utiliser n'importe quel port libre. En local, pour résoudre les 2 domaines on utilise deux ports différents.
+>Utiliser n'importe quel port libre de votre machine. Pour simuler les deux domaines en local, on utilise deux ports différents.
 
 
 
